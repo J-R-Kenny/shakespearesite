@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shakespeare!</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Shakespeare!</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Search for some shakespeare below!</h2>
+      <form action="/shakespearesearch" method="GET">
+        <input type="text" name="searchTerm" placeholder="Shakespeare Search Term" />
+        <button type="submit">submit</button>
+      </form>
+      <p>You searched for <%=searchTerm%></p>
+      <p>Your results are <%= searchResults%></p>
+    </section>
+</body>
+
+</html>
